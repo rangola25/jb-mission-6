@@ -77,7 +77,7 @@ export default function Vacations(): JSX.Element {
           if (filteredVacations?.length !== 0) {
               setVacations(filteredVacations)
           } else {
-              setVacations([])  // No vacations found, set to empty array
+              setVacations([]) 
           }
       } else if (filter === 'active') {
           const filteredVacations = vacationsRedux?.filter(v => new Date(v.endDate) > new Date() && new Date(v.startDate) < new Date())
@@ -85,7 +85,7 @@ export default function Vacations(): JSX.Element {
           if (filteredVacations?.length !== 0) {
               setVacations(filteredVacations)
           } else {
-              setVacations([])  // No vacations found, set to empty array
+              setVacations([])  
           }
       } else {
         setVacations(vacationsRedux)

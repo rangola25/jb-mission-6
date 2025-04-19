@@ -7,7 +7,7 @@ import { StatusCodes } from "http-status-codes";
 import User from "../../models/user";
 
 
-function hashPassword(password: string): string {
+export function hashPassword(password: string): string {
     return createHmac('sha256', config.get<string>('app.secret'))
             .update(password)
             .digest('hex')
