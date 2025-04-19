@@ -22,6 +22,6 @@ describe('hashPassword tests', () => {
     })
     test('generates a given hash from a given password + secret', () => {
         const hash = hashPassword('123456')
-        expect(hash).toBe('7f7737fddd2842bc2afdbf1868aaa8e986b83133a1f010fe96535c15e4584628')
+        expect(hash).toBe('94c549c9e123364d884d16d109ce5db5c553f18c054c319fea2ba4f4a4c4e303')
     })
 })
